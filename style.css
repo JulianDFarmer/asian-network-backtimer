@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Reith Sans";
+    font-weight: normal;
+    src: url("fonts/BBCReithSans_W_Rg.woff2") format("woff2"),
+    url("fonts/BBCReithSans_W_Rg.woff") format("woff");
+}
+@font-face {
+    font-family: "Reith Sans";
+    font-weight: 500;
+    src: url("fonts/BBCReithSans_W_Md.woff2") format("woff2"),
+    url("fonts/BBCReithSans_W_Md.woff") format("woff");
+}
+@font-face {
+    font-family: "Reith Sans";
+    font-weight: bold;
+    src: url("fonts/BBCReithSans_W_Bd.woff2") format("woff2"),
+    url("fonts/BBCReithSans_W_Bd.woff") format("woff");
+}
+@font-face {
+    font-family: "Reith Serif";
+    font-weight: normal;
+    src: url("fonts/BBCReithSerif_W_Rg.woff2") format("woff2"),
+    url("fonts/BBCReithSerif_W_Rg.woff") format("woff");
+}
+@font-face {
+    font-family: "Reith Serif";
+    font-weight: 500;
+    src: url("fonts/BBCReithSerif_W_Md.woff2") format("woff2"),
+    url("fonts/BBCReithSerif_W_Md.woff") format("woff");
+}
+@font-face {
+    font-family: "Reith Serif";
+    font-weight: bold;
+    src: url("fonts/BBCReithSerif_W_Bd.woff2") format("woff2"),
+    url("fonts/BBCReithSerif_W_Bd.woff") format("woff");
+}
+
+body {
+    font-family: Reith Sans, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #dedede;
+}
+
+#container {
+    width: 75%;
+    height: 100%;
+}
+
+#header {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f22e9c;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    border-bottom: 5px solid #f17db9;
+}
+
+#header > img {
+    height: 75px;
+}
+
+#log {
+    height: 80%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+#log-new-item {
+    font-size: 18px;
+    display: flex;
+}
+
+#log-new-item > div {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#log-error-msg {
+    display: none;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#log-new-item > div > input {
+    font-size: 18px;
+}
+
+#item-name {
+    width: 200px;
+}
+
+#item-dur {
+    width: 50px;
+}
+
+#item-add {
+    font-size: 20px;
+    font-weight: bold;
+    width: 75px;
+    height: 40px;
+    margin-top: 5px;
+    align-self: center;
+}
+
+#log-header {
+    display: none;
+    margin-top: 20px;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 3px solid #dedede;
+}
+
+.log-items-row {
+    display: flex;
+    padding: 5px 15px;
+    font-size: 18px;
+}
+.log-items-row:nth-child(even) {
+    background-color: #dedede;
+}
+.log-items-row:nth-child(odd) {
+    background-color: #eeeeee;
+}
+.log-items-row:hover {
+    color: white;
+    background-color: #f22e9c;
+}
+.log-items-row-selected {
+    font-weight: bold;
+    color: white;
+    background-color: #f17db9 !important;
+}
+.l-name {
+    width: 60%;
+}
+.l-time {
+    width: 10%;
+}

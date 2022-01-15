@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asian Network Backtimer</title>
+    <script src="script.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="moment.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="onLoad()">
+    <div id="container">
+        <div id="header">
+            Newsbeat Backtimer
+            <img src="logo.png" />
+        </div>
+        <div id="log">
+            <div id="log-error-msg">
+
+            </div>
+            <div id="log-new-item">
+                <div>
+                    <b>Item name:</b>
+                    <input type="text" id="item-name">
+                </div>
+                <div>
+                    <b>Duration:</b>
+                    <input type="text" id="item-dur">
+                </div>
+                <button type="button" id="item-add">Add</button>
+            </div>
+            <div id="log-header">
+                <div class="l-name">Name</div>
+                <div class="l-time">Dur</div>
+                <div class="l-time">29:51</div>
+                <div class="l-time">56:51</div>
+                <div class="l-time">59:51</div>
+            </div>
+            <div id="log-items">
+
+            </div>
+        </div>
+    </div>
+</html>
